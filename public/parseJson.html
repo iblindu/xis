@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tag-uri necesare -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Clinica Stomatologica</title>
+  </head>
+  <body onload="loadJSONDoc()">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Clinica Stomatologica</h1>
+        <p>parsare JSON</p>
+      </div>
+    </div>
+    <!-- div-ul in care va fi afisat continutul parsat -->
+    <div class="row justify-content-md-center m-3">
+      <div class="col col-lg-10">
+        <table class="table table-striped table-dark" id="json"></table>
+      </div>
+    </div>
+    <!-- referentierea scriptului ce contine functia de parsare care este chemata in body -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

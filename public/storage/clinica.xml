@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="clinica.xsl"?>
+<clinica
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="clinica.xsd"
+    >
+    <consultatie data="2020-03-20" ora="17:05">
+        <pacient id="41" sex="F" >
+            <nume>Veizu</nume>
+            <prenume>Ileana</prenume>
+        </pacient>
+        <doctor>
+            <specializare>ortodontie</specializare>
+            <nume_doctor>Moscu</nume_doctor>
+            <prenume_doctor>Andreea</prenume_doctor>
+        </doctor>
+        <procedura>consult</procedura>
+        <diagnostic cod="15" tip="P"/>
+        <trimitere id="32" specialitate="imagistica">Radiografie maxilar </trimitere>
+        <reteta id="34">
+            <medicament>Ibuprofen</medicament>
+            <administrare>dupa masa</administrare>
+        </reteta>
+        <cost moneda="RON">200</cost>
+    </consultatie>
+    <consultatie data="2020-03-23" ora="23:05">
+        <pacient id="54" sex="M" >
+            <nume>Valentin</nume>
+            <prenume>Libar</prenume>
+        </pacient>
+        <doctor>
+            <specializare>chirurgie</specializare>
+            <nume_doctor>Zamfir</nume_doctor>
+            <prenume_doctor>Irina</prenume_doctor>
+        </doctor>
+        <procedura>implant</procedura>
+        <diagnostic cod="65" tip="P"/>
+        <trimitere id="43" specialitate="imagistica">Radiografie mandibula </trimitere>
+        <reteta id="7">
+            <medicament>Ibuprofen</medicament>
+            <administrare>dupa masa</administrare>
+        </reteta>
+        <cost moneda="RON">1500</cost>
+    </consultatie>
+</clinica>
+
+

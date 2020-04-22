@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tag-uri necesare -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Clinica Stomatologica</title>
+  </head>
+  <body>
+    <div class="hero-image-index">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Clinica Stomatologica</h1>
+        <p>evidenta consultatii</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center m-3">
+      <div class="col col-lg-8">
+        <div class="row row-cols-1 row-cols-md-3">
+          <!-- Formular pentru parsare XML -->
+          <div class="col mb-4">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">XML</div>
+              <div class="card-body">
+                <form
+                  action="/uploadXml"
+                  enctype="multipart/form-data"
+                  method="POST"
+                >
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      name="xml_file"
+                      class="custom-file-input"
+                      id="xml"
+                      accept=".xml"
+                    />
+                    <label class="custom-file-label" for="xml"
+                      >Alege un fisier XML</label
+                    >
+                  </div>
+                  <br />
+                  <br />
+                  <button
+                    type="submit"
+                    name="parse_xml"
+                    value="parse_xml"
+                    id="parse_xml"
+                    class="btn btn-block btn-dark"
+                  >
+                    <i class="fa fa-fw fa-upload"></i> Parsare XML
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Formular pentru parsare JSON -->
+          <div class="col mb-4">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">JSON</div>
+              <div class="card-body">
+                <form
+                  action="/uploadJson"
+                  enctype="multipart/form-data"
+                  method="POST"
+                >
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      name="json_file"
+                      class="custom-file-input"
+                      id="json"
+                      accept=".json"
+                    />
+                    <label class="custom-file-label" for="json"
+                      >Alege un fisier JSON</label
+                    >
+                  </div>
+                  <br />
+                  <br />
+                  <button
+                    type="submit"
+                    name="parse_json"
+                    value="parse_json"
+                    id="parse_json"
+                    class="btn btn-block btn-dark"
+                  >
+                    <i class="fa fa-fw fa-upload"></i> Parsare JSON
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Formular pentru afisare XML cu foi de stiluri-->
+          <div class="col mb-4">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">XSL</div>
+              <div class="card-body">
+                <form
+                  action="/showXsl"
+                  enctype="multipart/form-data"
+                  method="POST"
+                >
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      name="xsl_file"
+                      class="custom-file-input"
+                      id="xsl"
+                      accept=".xml"
+                    />
+                    <label class="custom-file-label" for="xsl"
+                      >Alege un fisier XML</label
+                    >
+                  </div>
+                  <br />
+                  <br />
+                  <button
+                    type="submit"
+                    name="parse_xml"
+                    value="parse_xml"
+                    id="parse_xml"
+                    class="btn btn-block btn-dark"
+                  >
+                    <i class="fa fa-fw fa-upload"></i> Afisare XSL cu XML
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

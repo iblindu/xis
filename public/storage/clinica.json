@@ -1,0 +1,72 @@
+{
+  "consultatii": [
+    {
+      "data": "2020-03-20",
+      "ora": "17:05",
+      "pacient": {
+        "id_pacient": "432",
+        "sex": "feminin",
+        "nume": "Veizu",
+        "prenume": "Ileana"
+      },
+      "doctor": {
+        "specializare": "ortodontie",
+        "nume_doctor": "Moscu",
+        "prenume_doctor": "Andreea"
+      },
+      "procedura": "consult",
+      "diagnostic": {
+        "cod": "244",
+        "tip": "P"
+      },
+      "trimitere": {
+        "id_trimitere": "54434",
+        "specialitate": "imagistica",
+        "descriere": "Radiografie maxilar"
+      },
+      "reteta": {
+        "id_reteta": "345453",
+        "medicament": "Ibuprofen",
+        "administrare": "dupa masa"
+      },
+      "cost": {
+        "moneda": "RON",
+        "suma": "200"
+      }
+    },
+    {
+      "data": "2020-03-23",
+      "ora": "23:05",
+      "pacient": {
+        "id_data": "543",
+        "sex": "masculin",
+        "nume": "Valentin",
+        "prenume": "Libar"
+      },
+      "doctor": {
+        "specializare": "chirurgie",
+        "nume_doctor": "Zamfir",
+        "prenume_doctor": "Irina"
+      },
+      "procedura": "implant",
+      "diagnostic": {
+        "cod": "342",
+        "tip": "P"
+      },
+      "trimitere": {
+        "id_trimitere": "45677",
+        "specialitate": "imagistica",
+        "descriere": "Radiografie mandibula"
+      },
+      "reteta": {
+        "id_reteta": "3452",
+        "medicament": "Ibuprofen",
+        "administrare": "dupa masa"
+      },
+      "cost": {
+        "moneda": "RON",
+        "suma": "1500"
+      }
+    }
+  ]
+}
